@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Rainfolk';
+  src: url('../assets/fonts/rainfolk-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TheanoDidot';
+  src: url('../assets/fonts/TheanoDidot-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: 'Rainfolk', 'TheanoDidot', 'Lato', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+}
