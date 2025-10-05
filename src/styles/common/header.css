@@ -1,0 +1,34 @@
+
+header {
+    padding: 1rem 2rem;
+}
+
+.header_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav_list {
+    display: flex;
+    gap: 1rem;
+}
+
+.header_nav_list_pages {
+    display: flex;
+    gap: 1rem;
+}
+
+.header_nav_list_socials {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.header_nav_list_pages_link {
+    font-family: 'TheanoDidot', sans-serif;
+}
+
+.header_nav_list_social_link {
+    width: 32px;
+}
+

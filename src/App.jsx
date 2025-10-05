@@ -2,7 +2,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 import './styles/App.css'
 import Home from './pages/Home'
-import About from './pages/about'
+import About from './pages/About.jsx'
 import Skills from './pages/Skills'
 import Projects from './pages/Projects'
 import OtherSkills from './pages/OtherSkills'
@@ -11,7 +11,8 @@ import Education from './pages/Education'
 import Contact from './pages/Contact'
 import Error404 from './pages/Error404'
 
-import Header from './components/common/header' 
+import Header from './components/common/Header.jsx' 
+import Footer from './components/common/Footer.jsx'
 
 
 
@@ -24,49 +25,49 @@ const router = createBrowserRouter([
   },
 
   {
-    path: '/A-propos-de-moi',
+    path: '/about',
     element: 
       <About />
   },
 
   {
-    path: '/Competences',
+    path: '/skills',
     element: 
       <Skills />
   },
 
   {
-    path: '/Projets',
+    path: '/works',
     element: 
       <Projects />
   },
 
   {
-    path: '/Autres-competences',
+    path: '/other-skills',
     element: 
       <OtherSkills />
   },
 
   {
-    path: '/Futurs-projets',
+    path: '/future-projects',
     element: 
       <FutureProjects />
   },
 
   {
-    path: '/Education',
+    path: '/education',
     element: 
       <Education />
   },
 
   {
-    path: '/Contact',
+    path: '/contact',
     element: 
       <Contact />
   },
 
   {
-    path: '/Error404',
+    path: '/error404',
     element: 
       <Error404 />
   },
@@ -74,12 +75,12 @@ const router = createBrowserRouter([
 ])
 
 function App() {
+
   return (
     <div className="app">
       <Header />
-      <main>
-        <RouterProvider router={router} />
-      </main>
+      <main><RouterProvider router={router} /></main>
+      <Footer />
     </div>
   );
 }

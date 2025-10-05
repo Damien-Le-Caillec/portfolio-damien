@@ -1,9 +1,27 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F4EDE1;
+  height: 100%;
+}
+
 #root {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
+h1 {
+  font-family: 'Rainfolk', sans-serif;
+  color: #4D3F30;
+}
 
-
+a {
+  text-decoration: none;
+  color: #4D3F30;
+}
