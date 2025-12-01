@@ -1,6 +1,9 @@
+interface LinkedinIconProps {
+    size?: number;
+    color?: string;
+}
 
-
-function linkedin({ size = 32, color = "#4D3F30" }) {
+function Linkedin({ size = 32, color = "#4D3F30" }: LinkedinIconProps) {
     return (
         <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -14,4 +17,6 @@ function linkedin({ size = 32, color = "#4D3F30" }) {
     )
 }
 
-export default linkedin;
+export default Linkedin;
+
+

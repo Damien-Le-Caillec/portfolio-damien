@@ -1,6 +1,9 @@
+interface GithubIconProps {
+    size?: number;
+    color?: string;
+}
 
-
-function GithubIcon({ size = 32, color = "#4D3F30" }) {
+function GithubIcon({ size = 32, color = "#4D3F30" }: GithubIconProps) {
     return (
         <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,3 +18,5 @@ function GithubIcon({ size = 32, color = "#4D3F30" }) {
 }
 
 export default GithubIcon
+
+

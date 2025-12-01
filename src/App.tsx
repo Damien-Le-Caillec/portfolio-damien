@@ -2,7 +2,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 import './styles/App.css'
 import Home from './pages/Home'
-import About from './pages/About.jsx'
+import About from './pages/About'
 import Skills from './pages/Skills'
 import Projects from './pages/Projects'
 import OtherSkills from './pages/OtherSkills'
@@ -11,11 +11,8 @@ import Education from './pages/Education'
 import Contact from './pages/Contact'
 import Error404 from './pages/Error404'
 
-import Header from './components/common/Header.jsx' 
-import Footer from './components/common/Footer.jsx'
-
-
-
+import Header from './components/common/Header' 
+import Footer from './components/common/Footer'
 
 const router = createBrowserRouter([
   {
@@ -86,3 +83,5 @@ function App() {
 }
 
 export default App
+
+

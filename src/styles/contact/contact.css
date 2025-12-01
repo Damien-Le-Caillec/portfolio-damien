@@ -1,0 +1,113 @@
+.contact_section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    position: relative;
+    padding: 2rem 1rem;
+}
+
+.contact_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--nature-forest), transparent);
+    opacity: 0.3;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form_row.full_width {
+  grid-template-columns: 1fr;
+}
+
+.contact_form input,
+.contact_form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.7rem;
+    border: 1px solid rgba(95, 124, 86, 0.3);
+    background-color: var(--nature-paper);
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    color: var(--nature-wood);
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(95, 124, 86, 0.05);
+}
+
+.contact_form input:focus,
+.contact_form textarea:focus {
+    outline: none;
+    border-color: var(--nature-forest);
+    box-shadow: 0 0 0 3px rgba(95, 124, 86, 0.1),
+                inset 0 2px 4px rgba(95, 124, 86, 0.05);
+    background-color: #fff;
+}
+
+.contact_form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact_form button {
+  align-self: flex-start;
+  background: linear-gradient(135deg, var(--nature-forest) 0%, var(--nature-sage) 100%);
+  color: var(--nature-paper);
+  border: 1px solid rgba(95, 124, 86, 0.3);
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'TheanoDidot', serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(95, 124, 86, 0.2),
+              inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact_form button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.contact_form button:hover {
+  background: linear-gradient(135deg, var(--nature-sage) 0%, var(--nature-moss) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(95, 124, 86, 0.3),
+              inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.contact_form button:hover::before {
+  left: 100%;
+}
+
+.contact_form button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(95, 124, 86, 0.25);
+}
+

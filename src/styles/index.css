@@ -24,4 +24,16 @@
   line-height: 1.5;
   font-weight: 400;
 
+  /* Couleurs naturelles */
+  --nature-sage: #7A9B7A;
+  --nature-forest: #5F7C56;
+  --nature-earth: #8B6F47;
+  --nature-terracotta: #A67C52;
+  --nature-cream: #F4EDE1;
+  --nature-paper: #FFF8F0;
+  --nature-wood: #4D3F30;
+  --nature-moss: #6B8E6B;
+  --nature-stone: #9A8B7A;
+  --nature-leaf-light: #A8C5A8;
+  --nature-leaf-dark: #4A6B4A;
 }
