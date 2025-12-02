@@ -1,3 +1,5 @@
+import "../styles/about/about.css"
+
 function About() {
     return (
         <section className="about_section">
@@ -6,15 +8,16 @@ function About() {
                 
                 <div className="about_content">
                     <div className="about_text">
-                        <p>
-                            Passionné par le développement web depuis mes débuts, je mets un point d'honneur à créer des expériences numériques qui allient esthétique et fonctionnalité. 
+                        <div className="horizontal">
+                        <img src="src\assets\img\moi.webp" alt="Damien Le Caillec" className="me_img" />
+                        <p className="about_me">
+                            Passionné par la technologie depuis mes débuts, je me suis naturellement diriger vers le developpement web et applicatif.
+                            <br />
+                            Je mets un point d'honneur à créer des expériences numériques qui allient esthétique et fonctionnalité. 
+                            <br />
                             Mon approche se base sur une compréhension approfondie des besoins utilisateurs et une attention particulière aux détails.
                         </p>
-                        
-                        <p>
-                            Fort d'une expérience en développement front-end et back-end, je maîtrise les technologies modernes tout en gardant une vision globale des projets. 
-                            J'aime particulièrement relever des défis techniques et explorer de nouvelles solutions.
-                        </p>
+                        </div>
                         
                         <h2>Ma philosophie</h2>
                         <p>
@@ -25,17 +28,17 @@ function About() {
                     
                     <div className="about_highlights">
                         <div className="highlight_card">
-                            <h3>🎯 Mission</h3>
+                            <h3>Mission</h3>
                             <p>Transformer vos idées en solutions numériques performantes et élégantes</p>
                         </div>
                         
                         <div className="highlight_card">
-                            <h3>🚀 Vision</h3>
+                            <h3>Vision</h3>
                             <p>Construire l'avenir du web avec des technologies durables et accessibles</p>
                         </div>
                         
                         <div className="highlight_card">
-                            <h3>💡 Valeurs</h3>
+                            <h3>Valeurs</h3>
                             <p>Qualité, innovation, collaboration et apprentissage continu</p>
                         </div>
                     </div>
@@ -44,8 +47,12 @@ function About() {
                 <div className="about_personal">
                     <h2>En dehors du code</h2>
                     <p>
-                        [À PERSONNALISER] Parlez de vos centres d'intérêt, hobbies, ou ce qui vous inspire en dehors du développement. 
-                        Cela humanise votre profil et montre votre personnalité.
+                        Guidé par une curiosité insatiable et un souci du détail méticuleux, je m'applique à restaurer des montres vintage avec le soin d'un passionné. 
+                        <br />
+                        Mon engouement pour l'automobile, combinant excellence technique et attrait visuel, témoigne également de ma fascination pour la mécanique et l'esthétique.
+                        <br />
+                        Mon harmonie se construit par l'interaction avec la vie : 
+                        j'entretiens une "jungle intérieure" et j'ai fabriqué ma propre serre pour fournir à mes plantes un environnement de croissance optimal.
                     </p>
                 </div>
             </div>
@@ -53,6 +60,6 @@ function About() {
     );
 }
 
-export default About
+export default About;
 
 

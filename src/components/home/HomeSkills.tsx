@@ -59,15 +59,15 @@ function HomeSkills() {
 
     return (
         <section className="skills neoRetroSkills" aria-label="Compétences">
-            <div className="skills__inner" ref={containerRef}>
-                <h2 className="skills__title">Compétences</h2>
-                <div className="skills__grid">
+            <div className="skills_inner" ref={containerRef}>
+                <h2 className="skills_title">Compétences</h2>
+                <div className="skills_grid">
                     {SKILLS.map((skill) => (
                         <article className="stamp" key={skill.name} style={{ zIndex: "var(--z)" }}>
-                            <div className="stamp__paper">
-                                <span className="stamp__perforation" aria-hidden="true"></span>
+                            <div className="stamp_paper">
+                                <span className="stamp_perforation" aria-hidden="true"></span>
                                 <img src={skill.icon}/>
-                                <span className="stamp__label">{skill.name}</span>
+                                <span className="stamp_label">{skill.name}</span>
                             </div>
                         </article>
                     ))}
